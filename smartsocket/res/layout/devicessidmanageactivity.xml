@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_word_page_3"
+    android:weightSum="10"
+    android:orientation="vertical" >
+    
+    
+  <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="8"
+        android:layout_weight="3.2">
+        
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:background="@drawable/head_top"
+       android:layout_weight="2.2" >
+
+         <ImageView
+            android:id="@+id/ssid_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/return_ic" />
+         
+        <TextView
+            android:id="@+id/route_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="@string/netname"
+            android:textSize="22sp" />
+        
+<!-- 
+
+  <ImageView
+            android:id="@+id/ivclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/head_close" />
+ -->
+       
+       
+    </RelativeLayout>
+    
+    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.8"
+            android:background="@drawable/head_top_1">  
+            	    	
+     </LinearLayout> 
+    
+   </LinearLayout>
+   
+     
+   <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:background="@color/grey_word_page_3"
+         android:orientation="vertical"
+         android:weightSum="7"
+         android:layout_weight="4.7">        
+         
+   <LinearLayout
+        android:id="@+id/input_route_name" 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_marginTop="8dp"
+    	android:layout_weight="1.4"
+    	android:background="@color/white"
+    	android:layout_gravity="center_horizontal"
+    	android:orientation="horizontal">
+    
+       <!-- 
+       <RadioButton 
+        android:id="@+id/change_route_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"/>
+        -->
+     
+     
+    <ToggleButton
+            android:id="@+id/change_route_name"
+            android:layout_width="35dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/toggle_selector2"
+            android:textOff=""
+            android:textOn="" />
+    
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:background="@color/white"
+        android:textColor="@color/background_blue"
+        android:text="@string/chang_route" />
+
+
+    <EditText 
+        android:id="@+id/repair_ssid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/background_blue"
+        android:background="@color/white"
+        android:hint="@string/pls_pwd"/>
+	</LinearLayout>
+	    
+    <LinearLayout
+        android:id="@+id/input_pwd_name" 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1.4"
+    	android:layout_marginTop="8dp"
+    	android:background="@color/white"
+    	android:orientation="horizontal">
+    
+     <!-- 
+     <RadioButton 
+        android:id="@+id/change_pwd_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"/>
+      -->
+      
+      <ToggleButton
+            android:id="@+id/change_pwd_name"
+            android:layout_width="35dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/toggle_selector2"
+            android:textOff=""
+            android:textOn="" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"
+        android:background="@color/white"
+        android:textColor="@color/background_blue"
+        android:text="@string/chang_pwd" />
+	</LinearLayout>
+	
+    
+	
+    <RelativeLayout
+        android:id="@+id/chang_pwd_encryption" 
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.8"
+        android:visibility="gone"
+        android:orientation="horizontal">
+    
+        <TextView 
+            android:id="@+id/left"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/background_blue"
+            android:text="@string/encryption"/>
+    
+        <CheckBox
+            android:id="@+id/rad_left"
+            android:layout_toRightOf="@+id/left" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        
+        <CheckBox
+            android:id="@+id/rad_right" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/rad_right"
+            android:layout_centerInParent="true"
+            android:textColor="@color/background_blue"
+            android:text="@string/noencryption"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/input_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1.4"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background_blue"
+            android:layout_marginLeft="10dp"
+            android:text="@string/pls_input_pwd"/>
+       <EditText
+            android:id="@+id/pwd_update" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/background_blue"
+            android:background="@color/white"
+            android:hint="@string/pls_input_newpwd"/>
+       
+       <ToggleButton
+            android:id="@+id/PswFlag"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:background="@drawable/toggle_selector"
+            android:textOff=""
+            android:textOn="" />
+            
+    </LinearLayout>
+ 
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+		android:layout_weight="1.4"
+		android:layout_marginTop="15dp"
+	    android:weightSum="2"
+	    android:gravity="center"
+		android:orientation="horizontal">
+    
+	 <Button
+	     android:id="@+id/save_button"
+	     android:layout_width="0dp"
+	     android:layout_height="wrap_content"
+	     android:layout_weight="1"
+	     android:layout_marginLeft="10dp"
+	     android:layout_marginRight="5dp"
+	     android:textSize="22sp"
+	     android:background="@color/grey_word_page_4"
+	     android:textColor="@color/white"
+	     android:text="@string/dialog_right" />
+	 
+	 <Button 
+	     android:id="@+id/cancel"
+	     android:layout_width="0dp"
+	     android:layout_height="wrap_content"
+	     android:layout_weight="1"
+	     android:layout_marginRight="10dp"
+	     android:layout_marginLeft="5dp"
+	     android:textSize="22sp"
+	     android:background="@color/grey_word_page_4"
+	     android:textColor="@color/white"
+	     android:text="@string/dialog_left"/>
+
+	</LinearLayout>
+	
+	 <TextView
+	    android:id="@+id/dev_hint"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="8dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" />
+	
+	
+  </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2"
+       android:background="@drawable/bottom" >
+   </RelativeLayout>
+ 
+</LinearLayout>

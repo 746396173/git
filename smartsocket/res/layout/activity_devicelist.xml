@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:visibility="visible"
+    android:background="@color/grey_word_page_3" >
+
+ <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3.2">
+        
+    <RelativeLayout
+        android:id="@+id/Top"
+        style="@style/registerTopLayout" >
+        
+        <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/seting" />
+
+        <TextView
+            android:id="@+id/dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/user_name_brovi"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+         <ImageView
+            android:id="@+id/ivadd_dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/head_add" />
+       
+    </RelativeLayout>
+    
+        <LinearLayout 
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/head_top_1">
+            <ImageView 
+                android:id="@+id/user_register_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView 
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:text="请登录"
+                android:textColor="@color/white"/>
+            
+        </LinearLayout> 
+        
+    </LinearLayout>
+  
+ <RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="0dp"
+     android:layout_weight="4.8">
+     
+     <!-- 
+      <com.gizwits.framework.widget.RefreshableListView
+        android:id="@+id/lvDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1dip"
+        android:listSelector="@color/transparent"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0.0sp"
+        android:scrollbars="none" />
+      -->
+    
+     <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" >
+            
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    
+     
+ </RelativeLayout>
+  
+ 
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/bottom">
+    </RelativeLayout>
+ 
+
+</LinearLayout>

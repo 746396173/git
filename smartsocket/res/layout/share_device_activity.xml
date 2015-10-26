@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3.5">
+        
+    <RelativeLayout
+        android:id="@+id/Top"
+        style="@style/registerTopLayout" >
+        
+        <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/return_ic" />
+
+        <TextView
+            android:id="@+id/dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/share"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+  
+       
+    </RelativeLayout>
+    
+        <LinearLayout 
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/head_top_1">
+           
+          
+            
+        </LinearLayout> 
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:gravity="center"
+         android:layout_weight="4.7">
+         
+    <ImageView 
+         android:id="@+id/share_device"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+    
+   </RelativeLayout>
+   
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:background="@drawable/bottom">
+    </RelativeLayout>
+
+</LinearLayout>

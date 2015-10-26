@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="@color/grey_word_page_3"
+    android:orientation="vertical" >
+    
+    <!-- 
+     <RelativeLayout
+        android:id="@+id/bind_rlTop"
+        style="@style/TopLayout" >
+
+        <ImageView
+            android:id="@+id/bind_ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/music_device_manage"
+            android:textColor="@color/text_blue"
+            android:textSize="22sp" />   
+    </RelativeLayout>
+     -->
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3.2">
+        
+    <RelativeLayout
+        android:id="@+id/Top"
+        style="@style/registerTopLayout" >
+        
+        <ImageView
+            android:id="@+id/bind_ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/return_ic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/music_device_manage"
+            android:textColor="@color/white"
+            android:textSize="22sp" />        
+       
+    </RelativeLayout>
+    
+        <LinearLayout 
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/head_top_1">
+            <ImageView 
+                android:id="@+id/user_register_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+           
+            
+        </LinearLayout> 
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.8"
+        android:orientation="vertical" >
+		<TextView 
+		    android:id="@+id/unbindname"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:text="@string/nodevicelist"/>
+        <ListView
+            android:id="@+id/Bind_Devices_list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/bottom">
+    </RelativeLayout>
+ 
+
+</LinearLayout>

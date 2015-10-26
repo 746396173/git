@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_word_page_3"
+    android:weightSum="10"
+    android:orientation="vertical"  >
+    
+    <!-- 
+    <com.gizwits.framework.widget.RefreshableListView
+        android:id="@+id/lvDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1dip"
+        android:listSelector="@color/transparent"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0.0sp"
+        android:scrollbars="none" />
+     -->
+
+      <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3.2">
+        
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        style="@style/registerTopLayout" >
+
+         <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/return_ic" />
+         
+        <TextView
+            android:id="@+id/dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/device_music"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+       
+    </RelativeLayout>
+    
+    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/head_top_1">
+            
+     </LinearLayout> 
+    
+   </LinearLayout>
+   
+  <LinearLayout 
+  	android:layout_width="match_parent"
+  	android:layout_height="0dp"
+  	android:layout_weight="4.8" >    
+	 
+  	 <ListView 
+  	     android:layout_width="match_parent"
+  	     android:layout_height="match_parent"
+  	     android:id="@+id/tv"/>
+  	     
+   </LinearLayout>
+	
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/bottom">
+    </RelativeLayout>
+    
+</LinearLayout>

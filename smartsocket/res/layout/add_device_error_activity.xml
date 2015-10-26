@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:visibility="visible"
+    android:background="@color/grey_word_page_3" >
+ 
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3.5">
+        
+    <RelativeLayout
+        android:id="@+id/Top"
+        style="@style/registerTopLayout" >
+        
+        <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/return_ic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/add_device"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+         <ImageView
+            android:id="@+id/close_dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/head_close" />
+       
+    </RelativeLayout>
+    
+        <LinearLayout 
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/head_top_1">
+        
+            
+            
+        </LinearLayout> 
+        
+    </LinearLayout>
+  
+ <RelativeLayout 
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:gravity="center"
+     android:layout_weight="4.7">
+     
+     
+     <TextView
+         android:id="@+id/des" 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/grey_word_page_4"
+         android:layout_centerInParent="true"
+         android:gravity="center"
+         android:textSize="18sp"
+         android:text="@string/add_device_error"/>
+
+     <Button
+         android:id="@+id/newscan"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginTop="25dp"
+         android:layout_marginLeft="85dp"
+         android:layout_marginRight="85dp"
+         android:layout_below="@+id/des"
+         android:layout_centerInParent="true"
+         android:textColor="@color/white"
+         android:background="@color/grey_word_page_4"
+         android:text="@string/new_scan" />
+     
+ </RelativeLayout>
+  
+ 
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:background="@drawable/bottom">
+    </RelativeLayout>
+
+</LinearLayout>

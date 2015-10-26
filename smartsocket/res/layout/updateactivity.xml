@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:visibility="visible"
+    android:background="@color/grey_word_page_3" >
+    
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3.5">
+        
+    <RelativeLayout
+        android:id="@+id/Top"
+        style="@style/registerTopLayout" >
+              
+
+        <TextView
+            android:id="@+id/dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/update"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+     
+    </RelativeLayout>
+    
+        <LinearLayout 
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/head_top_1">
+            <ImageView 
+                android:id="@+id/user_register_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            
+        </LinearLayout> 
+        
+    </LinearLayout>
+    
+   <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:orientation="vertical"
+     android:layout_weight="4.7">
+     
+     <TextView
+         android:id="@+id/updateing" 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="18sp"
+         android:paddingTop="15dp"
+         android:layout_gravity="center"
+         android:textColor="@color/grey_word_page_4"/> 
+         
+     <com.zowee.kefr.PieProgress 
+         xmlns:PieProgress="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/pie_progress"
+         android:paddingTop="25dp"
+         android:layout_gravity="center"
+         android:layout_width="130dp"
+         android:layout_height="130dp"
+         PieProgress:foregroundColor="#3c8bd5"
+         PieProgress:backgroundColor="#eef1f6"/>
+     
+     <ProgressBar 
+         android:id="@+id/update_progress"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/grey_word_page_4"/>
+     
+ </LinearLayout>
+    
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:background="@drawable/bottom">
+    </RelativeLayout>
+ 
+
+</LinearLayout>

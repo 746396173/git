@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_word_page_3"
+    android:weightSum="10"
+    android:orientation="vertical" >
+    
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3.5">
+        
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        style="@style/registerTopLayout" >
+
+         <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/return_ic" />
+         
+        <TextView
+            android:id="@+id/dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/device_music"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+       
+    </RelativeLayout>
+    
+    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/head_top_1">
+            
+     </LinearLayout> 
+    
+   </LinearLayout>
+   
+  <LinearLayout 
+  	android:layout_width="match_parent"
+  	android:layout_height="0dp"
+  	android:layout_weight="4.7" >
+    
+<!--  
+	   <com.gizwits.framework.widget.RefreshableListView
+        android:id="@+id/lvDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1dip"
+        android:listSelector="@color/transparent"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0.0sp"
+        android:scrollbars="none" />
+-->
+	 <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="100dp"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+   		android:gravity="center"
+       	android:layout_marginLeft="20dp"
+         />
+  	       
+	 <!--  
+	         android:horizontalSpacing="1dp"
+	                 android:verticalSpacing="1dp"
+	  android:cacheColorHint="#00000000"
+        android:dividerHeight="1dip"
+        android:listSelector="@color/transparent"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0.0sp"
+        android:scrollbars="none"
+        
+          android:gravity="center_horizontal"
+         ptr:ptrAnimationStyle="flip"
+	      ptr:ptrHeaderBackground="#00ff00"
+        ptr:ptrHeaderSubTextColor="#ff0000"
+        ptr:ptrHeaderTextColor="#0000ff"
+        
+         ptr:ptrListViewExtrasEnabled="false"
+        ptr:ptrMode="both"
+        
+        ptr:ptrRefreshableViewBackground="#ff0000"
+        
+          ptr:ptrScrollingWhileRefreshingEnabled="true"
+        ptr:ptrShowIndicator="true"
+	 -->
+   </LinearLayout>
+	
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:background="@drawable/bottom">
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>
